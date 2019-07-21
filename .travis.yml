@@ -1,0 +1,7 @@
+language: generic
+dist: xenial
+
+services:
+  - docker
+script:
+  - docker build -t xenonnt_analysis .

@@ -1,0 +1,26 @@
+dependencies:
+  - dask              # Out-of-core dataframes, used for multi-run loading in strax
+  - datashader        # Used in waveform display
+  - flake8            # Python PEP8 style checking
+  - jupyter
+  - jupyterlab
+  - graphviz          # Make svgs in straxen docs
+  - holoviews         # Used in waveform display
+  - matplotlib
+  - nb_conda          # Switch conda kernels in notebook
+  - numba>=0.44
+  - numpy
+  - pandas
+  - pandoc            # Markdown conversion for straxen docs
+  - pip
+  - python=3.6
+  - pytest            # Unit testing, used in strax
+  - scikit-learn
+  - scipy
+  - sphinx            # Build documentations
+  - tensorflow        # Will be upgraded to 2 for straxen/flamedisx, but have to install this first to get it to work
+  - tqdm
+  - pip:
+    - boltons         # Various utils, used in strax tests
+    - hypothesis      # Property-based testing, used in strax tests
+    - nbsphinx        # Add notebooks to documentation, used in straxen
